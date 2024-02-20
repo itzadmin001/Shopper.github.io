@@ -1,0 +1,73 @@
+.offers {
+    width: 65%;
+    height: 60vh;
+    display: flex;
+    margin: auto;
+    padding: 0 20px; /* Adjusted padding for better responsiveness */
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offers-left h1 {
+    color: #171717;
+    font-size: 36px; /* Adjusted font size for better readability on smaller screens */
+    font-weight: 600;
+}
+
+.offers-left p {
+    color: #171717;
+    font-size: 18px; /* Adjusted font size for better readability on smaller screens */
+    font-weight: 600;
+}
+
+.offers-left button {
+    width: 100%; /* Full width button for better responsiveness */
+    max-width: 282px; /* Limit the button width on larger screens */
+    height: 70px;
+    border-radius: 35px;
+    background-color: #ff4141;
+    border: none;
+    color: white;
+    font-size: 18px; /* Adjusted font size for better readability on smaller screens */
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 50px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    .offers {
+        width: 80%; /* Adjusted width for better fit on smaller screens */
+        height: auto; /* Allow content to dictate the height */
+         /* Stack items in a column on smaller screens */
+    }
+
+    .offers-left button {
+        font-size: 16px; /* Adjusted font size for better readability on smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .offers {
+        padding: 0 10px;
+    flex-direction: column-reverse;
+    }
+    .offers-right img{
+        max-width: 340px;
+    }
+}

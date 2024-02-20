@@ -1,0 +1,9 @@
+.star-rating {
+    display: flex;
+  }
+  
+  .star {
+    color: gold; /* Set your desired star color */
+    font-size: 1.5em; /* Adjust the font size as needed */
+  }
+  
